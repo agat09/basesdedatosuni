@@ -1,14 +1,14 @@
 <?php
 session_start();
-include 'conex.php';
-$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
+include 'con.php';
+$con = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 if(isset($_SESSION['NombreUsuario'])) {
      if ($_SESSION["idNiveles"] == 1) {
         $user = $_SESSION['NombreUsuario'];
            $codigo = $_SESSION["Codigo"];
 
-           $consulta=mysqli_query($conex, "select Foto from usuarios where Codigo = $codigo");                  
+           $consulta=mysqli_query($con, "select Foto from usuarios where Codigo = $codigo");                  
              while($filas=mysqli_fetch_array($consulta)){
                         $foto=$filas['Foto'];                           
                 }
@@ -16,17 +16,17 @@ if(isset($_SESSION['NombreUsuario'])) {
       ?>
 <?php 
         
-          $profesor=mysqli_query($conex,"select idProfesor, concat(NombresProfesor, ' ' ,ApellidosProfesor) as Profesor FROM profesor");
+          $profesor=mysqli_query($con,"select idProfesor, concat(NombresProfesor, ' ' ,ApellidosProfesor) as Profesor FROM profesor");
                  
-            $TotalEstudiantes = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM estudiantes"));// or die(mysql_error());
-        $TotalDocentes = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM profesor"));
-        $TotalAsignaturas = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM asignaturas"));
-        $TotalGrupos = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM grupo"));
-        $TotalHorarios = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM horarios"));
-        $TotalUsuarios = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM usuarios"));
-        $TotalNumeroAsignaciones = mysqli_num_rows(mysqli_query($conex,"SELECT * FROM numeros_asignaciones"));
-         $TotalUsuarios = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM usuarios"));
-        $Totalasignaciones = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM asignaciones"));
+            $TotalEstudiantes = mysqli_num_rows(mysqli_query($con, "SELECT * FROM estudiantes"));// or die(mysql_error());
+        $TotalDocentes = mysqli_num_rows(mysqli_query($con, "SELECT * FROM profesor"));
+        $TotalAsignaturas = mysqli_num_rows(mysqli_query($con, "SELECT * FROM asignaturas"));
+        $TotalGrupos = mysqli_num_rows(mysqli_query($con, "SELECT * FROM grupo"));
+        $TotalHorarios = mysqli_num_rows(mysqli_query($con, "SELECT * FROM horarios"));
+        $TotalUsuarios = mysqli_num_rows(mysqli_query($con, "SELECT * FROM usuarios"));
+        $TotalNumeroAsignaciones = mysqli_num_rows(mysqli_query($con,"SELECT * FROM numeros_asignaciones"));
+         $TotalUsuarios = mysqli_num_rows(mysqli_query($con, "SELECT * FROM usuarios"));
+        $Totalasignaciones = mysqli_num_rows(mysqli_query($con, "SELECT * FROM asignaciones"));
         ?>
 
 
