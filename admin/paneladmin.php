@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'conex.php';
-$con = mysqli_init("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
+$con = mysqli_init("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd",3306);
 
 if(isset($_SESSION['NombreUsuario'])) {
      if ($_SESSION["idNiveles"] == 1) {
