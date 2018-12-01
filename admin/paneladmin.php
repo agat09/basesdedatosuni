@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'conex.php';
-$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd",3306);
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 if(isset($_SESSION['NombreUsuario'])) {
      if ($_SESSION["idNiveles"] == 1) {
@@ -61,7 +61,7 @@ if(isset($_SESSION['NombreUsuario'])) {
 </head>
 <!-- Navigation-->
 
-<body class="fixed-nav sticky-footer bg-dark" id="#">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
        
   <?php
          
