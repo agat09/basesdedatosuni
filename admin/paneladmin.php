@@ -183,7 +183,8 @@ include ('includes/perfil.php');
     </nav>
 
     <!--//////////////////////////////*************Comienzo del conextenido del conextenido de las unidades******///////////-->
-    <div class="conextent-wrapper">
+    
+    <div class="content-wrapper">
         <div class="conextainer-fluid">
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
