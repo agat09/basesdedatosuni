@@ -1,7 +1,7 @@
 <?php
 include('../conex.php');
 $dato = $_POST['dato'];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 $registro = mysqli_query($conex,"SELECT * FROM horarios WHERE NombreHorario LIKE '%$dato%' ORDER BY idHorario ASC");
        echo '<table class="table table-striped table-condensed table-hover table-responsive">

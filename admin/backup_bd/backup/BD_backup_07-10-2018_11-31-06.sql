@@ -58,13 +58,13 @@ CREATE TABLE `estudiantes` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 INSERT INTO estudiantes VALUES("1","Alejandro Gabriel","Aguilar Tellez","2011-37379","001-0209910027k","89995359","22891201","Rto Schick III","","","","1","aguilar0991@hotmail.com");
-INSERT INTO estudiantes VALUES("2","Carlos Renato","Hernandez Rivas","2011-37373","001-040890-0044g","12345678","22891202","Las colinas","","","","1","rnato@hotmail.com");
-INSERT INTO estudiantes VALUES("3","Yasser Edsel","Lopez Herrera","2011-34357","001-020592-0035g","12345678","22891203","Los brasiles","","","","1","yedsel@hotmail.com");
-INSERT INTO estudiantes VALUES("4","Jose Antonio","Urbina Gutierrez","2011-35241","001-010190-0024l","12345678","22891204","Bo Cuba","","","","1","antonio@hotmail.com");
-INSERT INTO estudiantes VALUES("5","Ricardo Jose","Bird Lopez","2011-38854","001-020304-0024h","12345678","22891205","Carretera Masaya","","","","2","Bird@gmail.com");
-INSERT INTO estudiantes VALUES("6","Jorge Luis","Carballo Lacayo","2011-39987","001-121291-0021h","12345678","22891206","Malecon de managua","","","","2","jluis@gmail.com");
-INSERT INTO estudiantes VALUES("7","Maria Alejandra","Taleno Maltez","2011-39944","001-051090-0023h","12345678","22891207","Primero de mayo","","","","2","mataleno@gmail.com");
-INSERT INTO estudiantes VALUES("8","Luis Alberto","Morales Silva","2011-39521","001-010285-0023h","12345678","22891208","Boaco ciudad de dos pisos","","","","2","lmorales@gmail.com");
+INSERT INTO estudiantes VALUES("2","Carlos Renato","Hernandez Rivas","2011-37373","001-040890-0044g","Uni0953595678","22891202","Las colinas","","","","1","rnato@hotmail.com");
+INSERT INTO estudiantes VALUES("3","Yasser Edsel","Lopez Herrera","2011-34357","001-020592-0035g","Uni0953595678","22891203","Los brasiles","","","","1","yedsel@hotmail.com");
+INSERT INTO estudiantes VALUES("4","Jose Antonio","Urbina Gutierrez","2011-35241","001-010190-0024l","Uni0953595678","22891204","Bo Cuba","","","","1","antonio@hotmail.com");
+INSERT INTO estudiantes VALUES("5","Ricardo Jose","Bird Lopez","2011-38854","001-020304-0024h","Uni0953595678","22891205","Carretera Masaya","","","","2","Bird@gmail.com");
+INSERT INTO estudiantes VALUES("6","Jorge Luis","Carballo Lacayo","2011-39987","001-121291-0021h","Uni0953595678","22891206","Malecon de managua","","","","2","jluis@gmail.com");
+INSERT INTO estudiantes VALUES("7","Maria Alejandra","Taleno Maltez","2011-39944","001-051090-0023h","Uni0953595678","22891207","Primero de mayo","","","","2","mataleno@gmail.com");
+INSERT INTO estudiantes VALUES("8","Luis Alberto","Morales Silva","2011-39521","001-010285-0023h","Uni0953595678","22891208","Boaco ciudad de dos pisos","","","","2","lmorales@gmail.com");
 
 
 DROP TABLE IF EXISTS evaluaciones;
@@ -198,7 +198,7 @@ INSERT INTO numeros_asignaciones VALUES("1","34556123","1");
 INSERT INTO numeros_asignaciones VALUES("2","4566123","2");
 INSERT INTO numeros_asignaciones VALUES("3","34566","2");
 INSERT INTO numeros_asignaciones VALUES("4","123123","2");
-INSERT INTO numeros_asignaciones VALUES("5","123456","1");
+INSERT INTO numeros_asignaciones VALUES("5","Uni09535956","1");
 INSERT INTO numeros_asignaciones VALUES("6","987654","2");
 
 

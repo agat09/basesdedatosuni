@@ -1,7 +1,7 @@
 
 <?php 
 include('../conex.php');
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 $id = $_POST['id-registro'];
 $proceso = $_POST['pro'];
 $nombre = $_POST['nombre'];

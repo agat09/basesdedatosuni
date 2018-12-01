@@ -2,7 +2,7 @@
 include('../conex.php');
 
 $id = $_POST['id'];
-$conex = mysqlii_connect("localhost", "agat", "1234", "bd");
+$conex = mysqlii_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 mysqli_query($conex,"DELETE FROM asignaciones WHERE idAsignacion = '$id'");
 
 $registro = mysqli_query($conex,"SELECT  asignaciones.idAsignacion AS id, asignaciones.Descripcion AS Asignacion,concat(profesor.NombresProfesor,' ',profesor.ApellidosProfesor) as Profesor, 

@@ -1,6 +1,6 @@
        <?php
        include ('conex.php');
-        $conex = mysqli_connect("localhost", "agat", "1234", "bd");
+        $conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
         $TotalEstudiantes = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM estudiantes"));// or die(mysql_error());
         $TotalDocentes = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM profesor"));

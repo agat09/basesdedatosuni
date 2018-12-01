@@ -1,7 +1,7 @@
 <?php
-//$con = mysqli_connect("localhost","root","elier123","siad");
+
 include('conex.php');
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 $tables = array();
 $query = mysqli_query($conex, 'SHOW TABLES');

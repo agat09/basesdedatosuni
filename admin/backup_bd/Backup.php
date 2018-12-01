@@ -1,6 +1,6 @@
 <?php
 include './Connet.php';
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 $day=date("d");
 $mont=date("m");
 $year=date("Y");

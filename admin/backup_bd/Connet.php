@@ -1,25 +1,25 @@
 <?php
 error_reporting(E_PARSE);
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 /*Solo modifica lo que se encuentra en medio de las segundas
  comillas de los parentesis. Ejemplo: define("USER", "valor que ingresaras" ); 
  */
 
 /*Nombre de usuario de mysql
-define("USER", "agat");
+define("USER", "agat@myserveruni");
 
 //Servidor de mysql
-define("SERVER", "localhost");
+define("SERVER", "myserveruni.mysql.database.azure.com");
 
 //Nombre de la base de datos
 define("BD", "siad2");
 
 //Contraseña de myqsl
-define("PASS", "1234");*/
-    $SERVER = 'localhost'; //Host del Servidor MySQL
+define("PASS", "Uni095359");*/
+    $SERVER = 'myserveruni.mysql.database.azure.com'; //Host del Servidor MySQL
 	$BD = 'bd'; //Nombre de la Base de datos
-	$USER = 'agat'; //Usuario de MySQL
-	$PASS = '1234'; //Password de Usuario MySQL
+	$USER = 'agat@myserveruni'; //Usuario de MySQL
+	$PASS = 'Uni095359'; //Password de Usuario MySQL
 
 //Carpeta donde se almacenaran las copias de seguridad
 define("BACKUP_PATH", "backup/");

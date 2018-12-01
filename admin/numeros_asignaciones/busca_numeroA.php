@@ -1,7 +1,7 @@
 <?php
 include('../conex.php');
 $dato = $_POST['dato'];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 $registro = mysqli_query($conex,"SELECT numeros_asignaciones.idNumeroAsignacion as id, numeros_asignaciones.numeroAsignado as Numero, concat(profesor.NombresProfesor, ' ' ,profesor.ApellidosProfesor) as Profesor 
 FROM numeros_asignaciones INNER JOIN profesor ON numeros_asignaciones.IdProfesor=profesor.idProfesor

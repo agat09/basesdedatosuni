@@ -1,7 +1,7 @@
 <?php
 include('../conex.php');
 $dato = $_POST['dato'];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 $registro = mysqli_query($conex, "SELECT asignaturas.idAsignatura as id, asignaturas.NombreAsignatura as Asignatura                     
   WHERE asignaturas.NombreAsignatura LIKE '%$dato%' ORDER BY asignaturas.idAsignatura ASC");

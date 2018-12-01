@@ -80,14 +80,14 @@ CREATE TABLE `estudiantes` (
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 INSERT INTO estudiantes VALUES("1","Alejandro Gabriel","Aguilar Tellez","2011-37379","001-0209910027k","89995359","22891201","Rto Schick III","1","","","1","aguilar0991@hotmail.com");
-INSERT INTO estudiantes VALUES("2","Carlos Renato","Hernandez Rivas","2011-37373","001-040890-0044g","12345678","22891202","Las colinas","1","","","1","rnato@hotmail.com");
-INSERT INTO estudiantes VALUES("3","Yasser Edsel","Lopez Herrera","2011-34357","001-020592-0035g","12345678","22891203","Los brasiles","1","","","1","yedsel@hotmail.com");
-INSERT INTO estudiantes VALUES("4","Jose Antonio","Urbina Gutierrez","2011-35241","001-010190-0024l","12345678","22891204","Bo Cuba","1","","","1","antonio@hotmail.com");
-INSERT INTO estudiantes VALUES("5","Ricardo Jose","Bird Lopez","2011-38854","001-020304-0024h","12345678","22891205","Carretera Masaya","1","","","1","Bird@gmail.com");
-INSERT INTO estudiantes VALUES("6","Jorge Luis","Carballo Lacayo","2011-39987","001-121291-0021h","12345678","22891206","Malecon de managua","1","","","2","jluis@gmail.com");
-INSERT INTO estudiantes VALUES("7","Maria Alejandra","Taleno Maltez","2011-39944","001-051090-0023h","12345678","22891207","Primero de mayo","1","","","2","mataleno@gmail.com");
-INSERT INTO estudiantes VALUES("8","Luis Alberto","Morales Silva","2011-39521","001-010285-0023h","12345678","22891208","Boaco ciudad de dos pisos","1","","","2","lmorales@gmail.com");
-INSERT INTO estudiantes VALUES("9","yasser","lopez","123456","001-0209910027k","87896634","41144788","toms","1","images/fotos_perfil/perfil.jpg","","5","yaya@hotmail.com");
+INSERT INTO estudiantes VALUES("2","Carlos Renato","Hernandez Rivas","2011-37373","001-040890-0044g","Uni0953595678","22891202","Las colinas","1","","","1","rnato@hotmail.com");
+INSERT INTO estudiantes VALUES("3","Yasser Edsel","Lopez Herrera","2011-34357","001-020592-0035g","Uni0953595678","22891203","Los brasiles","1","","","1","yedsel@hotmail.com");
+INSERT INTO estudiantes VALUES("4","Jose Antonio","Urbina Gutierrez","2011-35241","001-010190-0024l","Uni0953595678","22891204","Bo Cuba","1","","","1","antonio@hotmail.com");
+INSERT INTO estudiantes VALUES("5","Ricardo Jose","Bird Lopez","2011-38854","001-020304-0024h","Uni0953595678","22891205","Carretera Masaya","1","","","1","Bird@gmail.com");
+INSERT INTO estudiantes VALUES("6","Jorge Luis","Carballo Lacayo","2011-39987","001-121291-0021h","Uni0953595678","22891206","Malecon de managua","1","","","2","jluis@gmail.com");
+INSERT INTO estudiantes VALUES("7","Maria Alejandra","Taleno Maltez","2011-39944","001-051090-0023h","Uni0953595678","22891207","Primero de mayo","1","","","2","mataleno@gmail.com");
+INSERT INTO estudiantes VALUES("8","Luis Alberto","Morales Silva","2011-39521","001-010285-0023h","Uni0953595678","22891208","Boaco ciudad de dos pisos","1","","","2","lmorales@gmail.com");
+INSERT INTO estudiantes VALUES("9","yasser","lopez","Uni09535956","001-0209910027k","87896634","41144788","toms","1","images/fotos_perfil/perfil.jpg","","5","yaya@hotmail.com");
 
 
 DROP TABLE IF EXISTS evaluaciones;
@@ -193,9 +193,9 @@ CREATE TABLE `material_didactico` (
   CONSTRAINT `material_didactico_ibfk_2` FOREIGN KEY (`idProfesor`) REFERENCES `profesor` (`idProfesor`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
-INSERT INTO material_didactico VALUES("2","151515","12345.pdf","1235","2018-10-14","1","2");
+INSERT INTO material_didactico VALUES("2","151515","Uni0953595.pdf","1235","2018-10-14","1","2");
 INSERT INTO material_didactico VALUES("3","789","121018.PDF","88","2018-10-14","1","4");
-INSERT INTO material_didactico VALUES("4","Uni online","12345.pdf","1","2018-10-23","1","5");
+INSERT INTO material_didactico VALUES("4","Uni online","Uni0953595.pdf","1","2018-10-23","1","5");
 INSERT INTO material_didactico VALUES("5","subida de material","Banca en Línea pgo enacal2.pdf","1","2018-10-30","1","5");
 
 

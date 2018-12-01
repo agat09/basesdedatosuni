@@ -76,13 +76,13 @@ CREATE TABLE `estudiantes` (
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 INSERT INTO estudiantes VALUES("1","Alejandro Gabriel","Aguilar Tellez","2011-37379","001-0209910027k","89995359","22891201","Rto Schick III","1","images/fotos_perfil/perfil.jpg","1","aguilar0991@hotmail.com");
-INSERT INTO estudiantes VALUES("2","Carlos Renato","Hernandez Rivas","2011-37373","001-040890-0044g","12345678","22891202","Las colinas","1","images/fotos_perfil/perfil.jpg","1","rnato@hotmail.com");
-INSERT INTO estudiantes VALUES("3","Yasser Edsel","Lopez Herrera","2011-34357","001-020592-0035g","12345678","22891203","Los brasiles","1","images/fotos_perfil/perfil.jpg","1","yedsel@hotmail.com");
-INSERT INTO estudiantes VALUES("4","Jose Antonio","Urbina Gutierrez","2011-35241","001-010190-0024l","12345678","22891204","Bo Cuba","1","images/fotos_perfil/perfil.jpg","1","antonio@hotmail.com");
-INSERT INTO estudiantes VALUES("5","Ricardo Jose","Bird Lopez","2011-38854","001-020304-0024h","12345678","22891205","Carretera Masaya","1","images/fotos_perfil/perfil.jpg","1","Bird@gmail.com");
-INSERT INTO estudiantes VALUES("6","Jorge Luis","Carballo Lacayo","2011-39987","001-121291-0021h","12345678","22891206","Malecon de managua","1","images/fotos_perfil/perfil.jpg","2","jluis@gmail.com");
-INSERT INTO estudiantes VALUES("7","Maria Alejandra","Taleno Maltez","2011-39944","001-051090-0023h","12345678","22891207","Primero de mayo","1","images/fotos_perfil/perfil.jpg","2","mataleno@gmail.com");
-INSERT INTO estudiantes VALUES("8","Luis Alberto","Morales Silva","2011-39521","001-010285-0023h","12345678","22891208","Boaco ciudad de dos pisos","1","images/fotos_perfil/perfil.jpg","2","lmorales@gmail.com");
+INSERT INTO estudiantes VALUES("2","Carlos Renato","Hernandez Rivas","2011-37373","001-040890-0044g","Uni0953595678","22891202","Las colinas","1","images/fotos_perfil/perfil.jpg","1","rnato@hotmail.com");
+INSERT INTO estudiantes VALUES("3","Yasser Edsel","Lopez Herrera","2011-34357","001-020592-0035g","Uni0953595678","22891203","Los brasiles","1","images/fotos_perfil/perfil.jpg","1","yedsel@hotmail.com");
+INSERT INTO estudiantes VALUES("4","Jose Antonio","Urbina Gutierrez","2011-35241","001-010190-0024l","Uni0953595678","22891204","Bo Cuba","1","images/fotos_perfil/perfil.jpg","1","antonio@hotmail.com");
+INSERT INTO estudiantes VALUES("5","Ricardo Jose","Bird Lopez","2011-38854","001-020304-0024h","Uni0953595678","22891205","Carretera Masaya","1","images/fotos_perfil/perfil.jpg","1","Bird@gmail.com");
+INSERT INTO estudiantes VALUES("6","Jorge Luis","Carballo Lacayo","2011-39987","001-121291-0021h","Uni0953595678","22891206","Malecon de managua","1","images/fotos_perfil/perfil.jpg","2","jluis@gmail.com");
+INSERT INTO estudiantes VALUES("7","Maria Alejandra","Taleno Maltez","2011-39944","001-051090-0023h","Uni0953595678","22891207","Primero de mayo","1","images/fotos_perfil/perfil.jpg","2","mataleno@gmail.com");
+INSERT INTO estudiantes VALUES("8","Luis Alberto","Morales Silva","2011-39521","001-010285-0023h","Uni0953595678","22891208","Boaco ciudad de dos pisos","1","images/fotos_perfil/perfil.jpg","2","lmorales@gmail.com");
 INSERT INTO estudiantes VALUES("10","Renan","Rosales","2011-37379","001-000011-0000l","77777777","22222222","granada","1","images/fotos_perfil/21232082_10155749693205799_8744693330035705291_n.jpg","2","rena@gmail.com");
 INSERT INTO estudiantes VALUES("11","Yara","Guido","20184452a","001-000000-0000k","77777777","22222222","bo 08 de mayo","1","images/fotos_perfil/maxresdefault.jpg","1","yara@gmail.com");
 INSERT INTO estudiantes VALUES("12","Yara","Guido","20184452a","001-000000-0000k","77777777","22222222","asdfafaf","1","images/fotos_perfil/perfil.jpg","1","yara@gmail.com");

@@ -2,7 +2,7 @@
 
 require('fpdf/fpdf.php');
 require('conex.php');
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd",3306);
 
 class PDF extends FPDF
 {

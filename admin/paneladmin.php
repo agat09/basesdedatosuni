@@ -1,32 +1,32 @@
 <?php
 session_start();
-include 'conex.php';
-$con = mysqli_init("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd",3306);
+include 'conexex.php';
+$conex = mysqli_init("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd",3306);
 
 if(isset($_SESSION['NombreUsuario'])) {
      if ($_SESSION["idNiveles"] == 1) {
         $user = $_SESSION['NombreUsuario'];
            $codigo = $_SESSION["Codigo"];
 
-           $consulta=mysqli_query($con, "select Foto from usuarios where Codigo = $codigo");                  
-             while($filas=mysqli_fetch_array($consulta)){
+           $conexsulta=mysqli_query($conex, "select Foto from usuarios where Codigo = $codigo");                  
+             while($filas=mysqli_fetch_array($conexsulta)){
                         $foto=$filas['Foto'];                           
                 }
          
       ?>
 <?php 
         
-          $profesor=mysqli_query($con,"select idProfesor, concat(NombresProfesor, ' ' ,ApellidosProfesor) as Profesor FROM profesor");
+          $profesor=mysqli_query($conex,"select idProfesor, conexcat(NombresProfesor, ' ' ,ApellidosProfesor) as Profesor FROM profesor");
                  
-            $TotalEstudiantes = mysqli_num_rows(mysqli_query($con, "SELECT * FROM estudiantes"));// or die(mysql_error());
-        $TotalDocentes = mysqli_num_rows(mysqli_query($con, "SELECT * FROM profesor"));
-        $TotalAsignaturas = mysqli_num_rows(mysqli_query($con, "SELECT * FROM asignaturas"));
-        $TotalGrupos = mysqli_num_rows(mysqli_query($con, "SELECT * FROM grupo"));
-        $TotalHorarios = mysqli_num_rows(mysqli_query($con, "SELECT * FROM horarios"));
-        $TotalUsuarios = mysqli_num_rows(mysqli_query($con, "SELECT * FROM usuarios"));
-        $TotalNumeroAsignaciones = mysqli_num_rows(mysqli_query($con,"SELECT * FROM numeros_asignaciones"));
-         $TotalUsuarios = mysqli_num_rows(mysqli_query($con, "SELECT * FROM usuarios"));
-        $Totalasignaciones = mysqli_num_rows(mysqli_query($con, "SELECT * FROM asignaciones"));
+            $TotalEstudiantes = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM estudiantes"));// or die(mysql_error());
+        $TotalDocentes = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM profesor"));
+        $TotalAsignaturas = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM asignaturas"));
+        $TotalGrupos = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM grupo"));
+        $TotalHorarios = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM horarios"));
+        $TotalUsuarios = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM usuarios"));
+        $TotalNumeroAsignaciones = mysqli_num_rows(mysqli_query($conex,"SELECT * FROM numeros_asignaciones"));
+         $TotalUsuarios = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM usuarios"));
+        $Totalasignaciones = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM asignaciones"));
         ?>
 
 
@@ -35,10 +35,10 @@ if(isset($_SESSION['NombreUsuario'])) {
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" conextent="IE=edge">
+    <meta name="viewport" conextent="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" conextent="">
+    <meta name="author" conextent="">
 
     <title>BD_UNI</title>
     <!-- Bootstrap core CSS-->
@@ -53,7 +53,7 @@ if(isset($_SESSION['NombreUsuario'])) {
     <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../images/u.png" type="image/x-icon">
+    <link rel="shortcut iconex" href="../images/u.png" type="image/x-iconex">
 
     <!-- <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <script src="../js/jquery.js"></script>
@@ -77,8 +77,8 @@ include ('includes/modal.php');
 include ('includes/perfil.php');
  ?>
 
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-conextrols="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-iconex"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
             <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
@@ -182,9 +182,9 @@ include ('includes/perfil.php');
         </div>
     </nav>
 
-    <!--//////////////////////////////*************Comienzo del contenido del contenido de las unidades******///////////-->
-    <div class="content-wrapper">
-        <div class="container-fluid">
+    <!--//////////////////////////////*************Comienzo del conextenido del conextenido de las unidades******///////////-->
+    <div class="conextent-wrapper">
+        <div class="conextainer-fluid">
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
@@ -201,12 +201,12 @@ include ('includes/perfil.php');
            </center>
            </div>
 
-        <div class="container">
+        <div class="conextainer">
             <div class="page-header">
                 <h1 class="all-tittles">Sistema Web Bases de Datos<small>/Panel de Administracion</small></h1>
             </div>
         </div>
-     <!--//////////////////////////////*************Comienzo del contenido******/////////////////////////////////////-->
+     <!--//////////////////////////////*************Comienzo del conextenido******/////////////////////////////////////-->
 <section>
        <div class="row">
             <div class="col-lg-12">
@@ -383,8 +383,8 @@ include ('includes/perfil.php');
                         </span>
                     </div>
                     <div class="panel-body">
-                            <h4 class="media-heading">Configuraciones</h4>
-                        <p>Configuracion de Cuenta<span class="label label-danger pull-right"></span></p>
+                            <h4 class="media-heading">conexfiguraciones</h4>
+                        <p>conexfiguracion de Cuenta<span class="label label-danger pull-right"></span></p>
                       <a href="cambiar_foto.php" class="btn btn-success"><i class="fa fa-mail-forward"></i>  Entrar</a>
                     </div>
                 </div>
@@ -415,14 +415,14 @@ include ('includes/perfil.php');
        
        </section>
        
-     <!--//////////////////////////////*************fin del contenido////////////////////////////////******///////////-->    
+     <!--//////////////////////////////*************fin del conextenido////////////////////////////////******///////////-->    
        
      
        
-        <!-- /.container-fluid-->
-        <!-- /.content-wrapper-->
+        <!-- /.conextainer-fluid-->
+        <!-- /.conextent-wrapper-->
         <footer class="sticky-footer">
-            <div class="container">
+            <div class="conextainer">
                 <div class="text-center">
                     <small>Copyright © Base de Datos UNI derechos reservados 2018</small>
                 </div>
@@ -435,7 +435,7 @@ include ('includes/perfil.php');
         <!-- Logout Modal-->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-conextent">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Seguro que desea Salir?</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -444,7 +444,7 @@ include ('includes/perfil.php');
                     </div>
                     <div class="modal-body">Seleccione la opcion de salir si esta seguro!!</div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-seconexdary" type="button" data-dismiss="modal">Cancelar</button>
                         <a class="btn btn-primary" href="../index.php">Salir</a>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 include('../conex.php');
-$conexion = mysqli_connect("localhost", "agat", "1234", "siad2");
+$conexion = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "siad2");
 	$paginaActual = $_POST['partida'];
 
     $numeroRegistros = mysqli_num_rows(mysqli_query($conex, "SELECT * FROM Profesors"));
