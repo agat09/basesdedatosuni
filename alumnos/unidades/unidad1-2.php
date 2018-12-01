@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../../admin/conex.php';
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 if(isset($_SESSION['NombreUsuario'])) {
      if ($_SESSION["idNiveles"] == 3) {
             $user = $_SESSION['NombreUsuario'];

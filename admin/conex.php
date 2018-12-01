@@ -1,6 +1,4 @@
-
-
-    <?php
+<?php 
 $servidor = "myserveruni.mysql.database.azure.com"; //el servidor que utilizaremos, en este caso será el localhos t
 $usuario = "agat@myserveruni"; //El usuario que acabamos de crear en la base de datos
 $contrasenha = "Uni095359"; //La contraseña del usuario que utilizaremos

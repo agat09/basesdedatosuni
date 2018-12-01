@@ -3,7 +3,7 @@ include('../../admin/conexion.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
 $id = $_POST['id'];
-$conexion = mysqli_connect("localhost", "agat", "1234", "siad");
+$conexion = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "siad");
 
 mysqli_query($conexion,"DELETE FROM inscripciones_asignaturas WHERE idInscripcion = '$id'");
 

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../../admin/conexion.php';
-$conexion = mysqli_connect("localhost", "agat", "1234", "siad");
+$conexion = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "siad");
 
 if(isset($_SESSION['NombreUsuario'])) {
      if ($_SESSION["NivelUsuario"] == 3) {

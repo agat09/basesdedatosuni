@@ -3,7 +3,7 @@ include('../../admin/conex.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
 $dato = $_POST['dato'];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 $registro = mysqli_query($conex,"SELECT entregatarea.idEntregaTareas as id, entregatarea.CodigoTareaProfesor CodigoProfesor, asignaturas.NombreAsignatura as Asignatura, entregatarea.Descripcion as Descripcion,  entregatarea.CodigoEnvioTarea as CodigoTarea, entregatarea.Archivo as Archivo
 FROM  entregatarea INNER JOIN asignaturas ON  entregatarea.idAsignatura =  asignaturas.idAsignatura 

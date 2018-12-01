@@ -3,7 +3,7 @@ include('../../admin/conexion.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
 $dato = $_POST['dato'];
-$conexion = mysqli_connect("localhost", "agat", "1234", "siad");
+$conexion = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "siad");
 
 $registro = mysqli_query($conexion,"SELECT inscripciones_asignaturas.idInscripcion as id, inscripciones_asignaturas.fechaInscripcion as fecha, inscripciones_asignaturas.observaciones as observaciones, asignaturas.NombreAsignatura as Asignatura, carreras.NombreCarrera as Carrera, years_academicos.NombreYear as Year,  cuatrimestres.NombreCuatrimestre as Cuatrimestre
 FROM             asignaturas INNER JOIN inscripciones_asignaturas ON  asignaturas.idAsignatura =  inscripciones_asignaturas.idAsignatura

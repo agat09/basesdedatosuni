@@ -1,7 +1,7 @@
 <?php include ('../admin/conex.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd",3306);
 
 $rutaservidor='images/fotos_perfil';
 $rutatemporal=$_FILES['foto']['tmp_name'];

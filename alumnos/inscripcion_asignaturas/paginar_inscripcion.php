@@ -3,7 +3,7 @@ include('../../admin/conexion.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
 	$paginaActual = $_POST['partida'];
-$conexion = mysqli_connect("localhost", "agat", "1234", "siad");
+$conexion = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "siad");
 
     $numeroRegistros = mysqli_num_rows(mysqli_query($conexion,"SELECT * FROM inscripciones_asignaturas"));
     $nroLotes = 10;

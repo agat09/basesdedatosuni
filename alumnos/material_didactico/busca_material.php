@@ -3,7 +3,7 @@ include('../../admin/conex.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
 $dato = $_POST['dato'];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 $registro = mysqli_query($conex,"SELECT  material_didactico.idMaterialDidactico AS id, material_didactico.idProfesor as idProfesor, material_didactico.Descripcion AS Descripcion, material_didactico.Archivo as Archivo, material_didactico.CodigoMaterial as Codigo, material_didactico.Fecha_Subida as Fecha, numeros_asignaciones.numeroAsignado as Numero FROM material_didactico INNER JOIN numeros_asignaciones ON material_didactico.idNumeroAsignacion = numeros_asignaciones.idNumeroAsignacion
 where material_didactico.CodigoMaterial = '$dato' ORDER BY material_didactico.idMaterialDidactico ASC");

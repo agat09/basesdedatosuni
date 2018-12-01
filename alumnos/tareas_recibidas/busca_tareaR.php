@@ -3,7 +3,7 @@ include('../../admin/conex.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
 $dato = $_POST['dato'];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 $registro = mysqli_query($conex,"SELECT planificacion_tareas.idPlanificacion as id, concat (profesor.NombresProfesor,' ' ,profesor.ApellidosProfesor) as Profesor, asignaturas.NombreAsignatura as Asignatura, 
       planificacion_tareas.Unidad as Unidad, planificacion_tareas.Tarea as Tarea, planificacion_tareas.DescripcionTarea as TareaD, planificacion_tareas.FechaPublicacion as FechaPublicacion, planificacion_tareas.FechaPresentacion as FechaPresentacion, planificacion_tareas.CodigoTarea as CodigoTarea

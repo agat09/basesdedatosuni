@@ -3,7 +3,7 @@ include_once '../../admin/conex.php';
 include_once 'funciones.php';
 session_start();
  $codigo = $_SESSION["Codigo"];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 if (isset($_POST['subir'])) {
     $nombre = $_FILES['archivo']['name'];
