@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'conexex.php';
+include 'conex.php';
 $conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd",3306);
 
 if(isset($_SESSION['NombreUsuario'])) {
