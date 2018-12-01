@@ -1,6 +1,6 @@
 <?php
 include('../../admin/conex.php');
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 $id = $_POST['id'];
 $valores = mysqli_query($conex,"SELECT * FROM planificacion_tareas WHERE idPlanificacion = '$id'");
 $valores2 = mysqli_fetch_array($valores);

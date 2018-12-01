@@ -2,7 +2,7 @@
 include('../../admin/conex.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 	$paginaActual = $_POST['partida'];
 
     $numeroRegistros = mysqli_num_rows(mysqli_query($conex,"SELECT * FROM asignaciones"));

@@ -3,7 +3,7 @@ include('../../admin/conex.php');
 session_start();
 $codigo = $_SESSION["Codigo"];
 $id = $_POST['id'];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 mysqli_query($conex, "DELETE FROM material_didactico WHERE idMaterialDidactico = '$id'");
 

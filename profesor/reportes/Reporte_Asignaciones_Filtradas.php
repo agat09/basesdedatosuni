@@ -9,13 +9,13 @@ $Horario = $_POST['horario'];
 $Turno = $_POST['turno'];
 $Grupo = $_POST['grupo'];
 $Numero = $_POST['numero'];
-$conex = mysqli_connect("localhost", "agat", "1234", "bd");
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 
 class PDF extends FPDF
 {
 		function Header()
 		{
-            $conex = mysqli_connect("localhost", "agat", "1234", "bd");
+            $conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 			$this->Image('../../images/u.png' , 10 ,10, 40 , 20,'PNG');
 			$this->SetFont('Arial','B',20);
 			$this->Cell(80);

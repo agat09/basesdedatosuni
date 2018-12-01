@@ -1,9 +1,9 @@
 <?php 
 class Conect_MySql {   
      var $obj = array ( "dbname"	=>	"bd", 
-                       "dbuser"		=>	"agat",
-                       "dbpwd"		=>	"1234",
-                       "dbhost"		=>	"localhost"	);
+                       "dbuser"		=>	"agat@myserveruni",
+                       "dbpwd"		=>	"Uni095359",
+                       "dbhost"		=>	"myserveruni.mysql.database.azure.com"	);
 
                          var $q_id	="";
                          var $ExeBit	="";

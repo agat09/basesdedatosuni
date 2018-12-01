@@ -2251,10 +2251,10 @@ function addCombinator( matcher, combinator, base ) {
 						} else if ( (oldCache = uniqueCache[ key ]) &&
 							oldCache[ 0 ] === dirruns && oldCache[ 1 ] === doneName ) {
 
-							// Assign to newCache so results back-propagate to previous elements
+							// Assign to newCache so results back-propagat@myserverunie to previous elements
 							return (newCache[ 2 ] = oldCache[ 2 ]);
 						} else {
-							// Reuse newcache so results back-propagate to previous elements
+							// Reuse newcache so results back-propagat@myserverunie to previous elements
 							uniqueCache[ key ] = newCache;
 
 							// A match means we're done; a fail means we have to keep checking
@@ -5163,14 +5163,14 @@ jQuery.event = {
 		// Determine handlers
 		handlerQueue = jQuery.event.handlers.call( this, event, handlers );
 
-		// Run delegates first; they may want to stop propagation beneath us
+		// Run delegates first; they may want to stop propagat@myserveruniion beneath us
 		i = 0;
-		while ( ( matched = handlerQueue[ i++ ] ) && !event.isPropagationStopped() ) {
+		while ( ( matched = handlerQueue[ i++ ] ) && !event.isPropagat@myserveruniionStopped() ) {
 			event.currentTarget = matched.elem;
 
 			j = 0;
 			while ( ( handleObj = matched.handlers[ j++ ] ) &&
-				!event.isImmediatePropagationStopped() ) {
+				!event.isImmediatePropagat@myserveruniionStopped() ) {
 
 				// Triggered event must either 1) have no namespace, or 2) have namespace(s)
 				// a subset or equal to those in the bound event (both can have no namespace).
@@ -5185,7 +5185,7 @@ jQuery.event = {
 					if ( ret !== undefined ) {
 						if ( ( event.result = ret ) === false ) {
 							event.preventDefault();
-							event.stopPropagation();
+							event.stopPropagat@myserveruniion();
 						}
 					}
 				}
@@ -5409,8 +5409,8 @@ jQuery.Event = function( src, props ) {
 jQuery.Event.prototype = {
 	constructor: jQuery.Event,
 	isDefaultPrevented: returnFalse,
-	isPropagationStopped: returnFalse,
-	isImmediatePropagationStopped: returnFalse,
+	isPropagat@myserveruniionStopped: returnFalse,
+	isImmediatePropagat@myserveruniionStopped: returnFalse,
 	isSimulated: false,
 
 	preventDefault: function() {
@@ -5422,25 +5422,25 @@ jQuery.Event.prototype = {
 			e.preventDefault();
 		}
 	},
-	stopPropagation: function() {
+	stopPropagat@myserveruniion: function() {
 		var e = this.originalEvent;
 
-		this.isPropagationStopped = returnTrue;
+		this.isPropagat@myserveruniionStopped = returnTrue;
 
 		if ( e && !this.isSimulated ) {
-			e.stopPropagation();
+			e.stopPropagat@myserveruniion();
 		}
 	},
-	stopImmediatePropagation: function() {
+	stopImmediatePropagat@myserveruniion: function() {
 		var e = this.originalEvent;
 
-		this.isImmediatePropagationStopped = returnTrue;
+		this.isImmediatePropagat@myserveruniionStopped = returnTrue;
 
 		if ( e && !this.isSimulated ) {
-			e.stopImmediatePropagation();
+			e.stopImmediatePropagat@myserveruniion();
 		}
 
-		this.stopPropagation();
+		this.stopPropagat@myserveruniion();
 	}
 };
 
@@ -8152,8 +8152,8 @@ support.focusin = "onfocusin" in window;
 
 
 var rfocusMorph = /^(?:focusinfocus|focusoutblur)$/,
-	stopPropagationCallback = function( e ) {
-		e.stopPropagation();
+	stopPropagat@myserveruniionCallback = function( e ) {
+		e.stopPropagat@myserveruniion();
 	};
 
 jQuery.extend( jQuery.event, {
@@ -8215,7 +8215,7 @@ jQuery.extend( jQuery.event, {
 			return;
 		}
 
-		// Determine event propagation path in advance, per W3C events spec (#9951)
+		// Determine event propagat@myserveruniion path in advance, per W3C events spec (#9951)
 		// Bubble up to document, then to window; watch for a global ownerDocument var (#9724)
 		if ( !onlyHandlers && !special.noBubble && !isWindow( elem ) ) {
 
@@ -8236,7 +8236,7 @@ jQuery.extend( jQuery.event, {
 
 		// Fire handlers on the event path
 		i = 0;
-		while ( ( cur = eventPath[ i++ ] ) && !event.isPropagationStopped() ) {
+		while ( ( cur = eventPath[ i++ ] ) && !event.isPropagat@myserveruniionStopped() ) {
 			lastElement = cur;
 			event.type = i > 1 ?
 				bubbleType :
@@ -8281,14 +8281,14 @@ jQuery.extend( jQuery.event, {
 					// Prevent re-triggering of the same event, since we already bubbled it above
 					jQuery.event.triggered = type;
 
-					if ( event.isPropagationStopped() ) {
-						lastElement.addEventListener( type, stopPropagationCallback );
+					if ( event.isPropagat@myserveruniionStopped() ) {
+						lastElement.addEventListener( type, stopPropagat@myserveruniionCallback );
 					}
 
 					elem[ type ]();
 
-					if ( event.isPropagationStopped() ) {
-						lastElement.removeEventListener( type, stopPropagationCallback );
+					if ( event.isPropagat@myserveruniionStopped() ) {
+						lastElement.removeEventListener( type, stopPropagat@myserveruniionCallback );
 					}
 
 					jQuery.event.triggered = undefined;
@@ -9211,7 +9211,7 @@ jQuery.extend( {
 					throw e;
 				}
 
-				// Propagate others as results
+				// Propagat@myserverunie others as results
 				done( -1, e );
 			}
 		}
