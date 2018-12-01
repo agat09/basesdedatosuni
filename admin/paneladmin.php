@@ -61,7 +61,7 @@ if(isset($_SESSION['NombreUsuario'])) {
 </head>
 <!-- Navigation-->
 
-<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+<body class="fixed-nav sticky-footer bg-dark" id="#">
        
   <?php
          
