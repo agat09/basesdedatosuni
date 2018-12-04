@@ -264,7 +264,12 @@ if(isset($_SESSION['NombreUsuario'])) {
                             <img class="img-fluid rounded" src="../images/u1.jpg" alt="">
                         </center>
                         <hr>
-
+                            
+                             <div align="center">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-7PfWNfvtOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                           
+                       
                         <h5> <a href="#">COMPONENTES BÁSICOS DE LAS BASES DE DATOS</a></h5>
                         <!-- Post Content -->
                         <hr>
