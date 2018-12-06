@@ -4,7 +4,7 @@ session_start();
 $codigo = $_SESSION["Codigo"];
 	$paginaActual = $_POST['partida'];
 
-    $numeroRegistros = mysql_num_rows(mysql_query("SELECT * FROM asignaciones"));
+    $numeroRegistros = mysqli_num_rows(mysql_query("SELECT * FROM asignaciones"));
     $nroLotes = 10;
     $nroPaginas = ceil($numeroRegistros/$nroLotes);
     $lista = '';
