@@ -1,10 +1,11 @@
 <?php
 include('../../admin/conex.php');
+$conex = mysqli_connect("myserveruni.mysql.database.azure.com", "agat@myserveruni", "Uni095359", "bd");
 session_start();
 $codigo = $_SESSION["Codigo"];
 	$paginaActual = $_POST['partida'];
 
-    $numeroRegistros = mysqli_num_rows(mysql_query("SELECT * FROM asignaciones"));
+    $numeroRegistros = mysqli_num_rows(mysql_query($conex,"SELECT * FROM asignaciones"));
     $nroLotes = 10;
     $nroPaginas = ceil($numeroRegistros/$nroLotes);
     $lista = '';
@@ -30,7 +31,7 @@ $codigo = $_SESSION["Codigo"];
   	}else{
   		$limit = $nroLotes*($paginaActual-1);
   	}
-  	$registro = mysql_query("SELECT entregatarea.idEntregaTareas as id, entregatarea.CodigoTareaProfesor CodigoProfesor, asignaturas.NombreAsignatura as Asignatura, entregatarea.Descripcion as Descripcion,  entregatarea.CodigoEnvioTarea as CodigoTarea, entregatarea.Archivo as Archivo
+  	$registro = mysqli_query($conex,"SELECT entregatarea.idEntregaTareas as id, entregatarea.CodigoTareaProfesor CodigoProfesor, asignaturas.NombreAsignatura as Asignatura, entregatarea.Descripcion as Descripcion,  entregatarea.CodigoEnvioTarea as CodigoTarea, entregatarea.Archivo as Archivo
 FROM  entregatarea INNER JOIN asignaturas ON  entregatarea.idAsignatura =  asignaturas.idAsignatura 
                      INNER JOIN estudiantes ON  entregatarea.idEstudiantes =  estudiantes.idEstudiantes
 where estudiantes.idEstudiantes = '$codigo' LIMIT $limit, $nroLotes ");
@@ -44,7 +45,7 @@ where estudiantes.idEstudiantes = '$codigo' LIMIT $limit, $nroLotes ");
                         <th width="20%">Archivo</th>                  
                         <th width="15%">Opciones</th>
                    </tr>';		
-          	while($registro2 = mysql_fetch_array($registro)){
+          	while($registro2 = mysqli_fetch_array($registro)){
       $tabla = $tabla.'<tr>
                          
                            <td>'.$registro2['CodigoProfesor'].'</td>
